@@ -15,6 +15,7 @@
 		1D8638941A08FB84007538F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8638931A08FB84007538F2 /* Images.xcassets */; };
 		1D8638971A08FB84007538F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8638951A08FB84007538F2 /* LaunchScreen.xib */; };
 		1D8638A31A08FB84007538F2 /* LocalNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8638A21A08FB84007538F2 /* LocalNotificationTests.m */; };
+		1D8638AE1A08FBF1007538F2 /* SetLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8638AD1A08FBF1007538F2 /* SetLocalNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		1D86389C1A08FB84007538F2 /* LocalNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8638A11A08FB84007538F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D8638A21A08FB84007538F2 /* LocalNotificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationTests.m; sourceTree = "<group>"; };
+		1D8638AC1A08FBF1007538F2 /* SetLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLocalNotification.h; sourceTree = "<group>"; };
+		1D8638AD1A08FBF1007538F2 /* SetLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLocalNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				1D8638871A08FB84007538F2 /* AppDelegate.h */,
 				1D8638881A08FB84007538F2 /* AppDelegate.m */,
+				1D8638AC1A08FBF1007538F2 /* SetLocalNotification.h */,
+				1D8638AD1A08FBF1007538F2 /* SetLocalNotification.m */,
 				1D86388D1A08FB84007538F2 /* ViewController.h */,
 				1D86388E1A08FB84007538F2 /* ViewController.m */,
 				1D8638901A08FB84007538F2 /* Main.storyboard */,
@@ -224,6 +229,7 @@
 			files = (
 				1D8638891A08FB84007538F2 /* AppDelegate.m in Sources */,
 				1D86388C1A08FB84007538F2 /* LocalNotification.xcdatamodeld in Sources */,
+				1D8638AE1A08FBF1007538F2 /* SetLocalNotification.m in Sources */,
 				1D86388F1A08FB84007538F2 /* ViewController.m in Sources */,
 				1D8638861A08FB84007538F2 /* main.m in Sources */,
 			);
