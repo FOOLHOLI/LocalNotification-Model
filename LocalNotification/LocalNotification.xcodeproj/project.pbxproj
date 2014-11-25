@@ -12,7 +12,6 @@
 		1D8638861A08FB84007538F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8638851A08FB84007538F2 /* main.m */; };
 		1D8638891A08FB84007538F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8638881A08FB84007538F2 /* AppDelegate.m */; };
 		1D86388C1A08FB84007538F2 /* LocalNotification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D86388A1A08FB84007538F2 /* LocalNotification.xcdatamodeld */; };
-		1D86388F1A08FB84007538F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D86388E1A08FB84007538F2 /* ViewController.m */; };
 		1D8638921A08FB84007538F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8638901A08FB84007538F2 /* Main.storyboard */; };
 		1D8638941A08FB84007538F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8638931A08FB84007538F2 /* Images.xcassets */; };
 		1D8638971A08FB84007538F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8638951A08FB84007538F2 /* LaunchScreen.xib */; };
@@ -41,8 +40,6 @@
 		1D8638871A08FB84007538F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D8638881A08FB84007538F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D86388B1A08FB84007538F2 /* LocalNotification.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalNotification.xcdatamodel; sourceTree = "<group>"; };
-		1D86388D1A08FB84007538F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D86388E1A08FB84007538F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D8638911A08FB84007538F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D8638931A08FB84007538F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D8638961A08FB84007538F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -96,8 +93,6 @@
 				1D8638881A08FB84007538F2 /* AppDelegate.m */,
 				1D8638AC1A08FBF1007538F2 /* SetLocalNotification.h */,
 				1D8638AD1A08FBF1007538F2 /* SetLocalNotification.m */,
-				1D86388D1A08FB84007538F2 /* ViewController.h */,
-				1D86388E1A08FB84007538F2 /* ViewController.m */,
 				1D0ABA0F1A248D55007167FA /* ShowAllLocalNotificationTableViewController.h */,
 				1D0ABA101A248D55007167FA /* ShowAllLocalNotificationTableViewController.m */,
 				1D0ABA121A24928B007167FA /* SetLocalNotificationViewController.h */,
@@ -242,7 +237,6 @@
 				1D8638AE1A08FBF1007538F2 /* SetLocalNotification.m in Sources */,
 				1D0ABA141A24928B007167FA /* SetLocalNotificationViewController.m in Sources */,
 				1D0ABA111A248D55007167FA /* ShowAllLocalNotificationTableViewController.m in Sources */,
-				1D86388F1A08FB84007538F2 /* ViewController.m in Sources */,
 				1D8638861A08FB84007538F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
