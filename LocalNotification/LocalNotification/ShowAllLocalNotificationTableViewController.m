@@ -63,8 +63,21 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        for (NSInteger i = 0 ; i < [allOfTheLocalNotification count] ; i++ )
+        {
+            UILocalNotification *localNotification = allOfTheLocalNotification[i];
+            
+            if (i == indexPath.row) {
+                UIApplication *application = [UIApplication sharedApplication];
+                [application cancelLocalNotification:localNotification];
+                allOfTheLocalNotification = [application scheduledLocalNotifications];  //重新載入資料
+                break;
+            }
+        }
+        
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
