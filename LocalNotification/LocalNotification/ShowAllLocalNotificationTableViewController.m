@@ -10,30 +10,43 @@
 
 @interface ShowAllLocalNotificationTableViewController ()
 
+@property (strong, nonatomic) NSArray *allOfTheLocalNotification;
+
 @end
 
 @implementation ShowAllLocalNotificationTableViewController
 
+@synthesize allOfTheLocalNotification;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIApplication *application = [UIApplication sharedApplication];
+    allOfTheLocalNotification = [application scheduledLocalNotifications];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [allOfTheLocalNotification count];
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
+    UILocalNotification *localNotification = allOfTheLocalNotification[indexPath.row];
+    cell.textLabel.text = localNotification.alertBody;
+    
+
+    if (indexPath.row % 2) {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", localNotification.fireDate];
+    } else {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"HH:mm"];
+        cell.detailTextLabel.text = [formatter stringFromDate:localNotification.fireDate];
+    }
     
     return cell;
 }
