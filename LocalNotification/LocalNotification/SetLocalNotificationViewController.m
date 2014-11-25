@@ -40,7 +40,11 @@
 }
 
 - (IBAction)save:(id)sender {
-    
+    [self.localNotification setLocalNotificationWithMessage:self.textField.text
+                                                   fireDate:self.datePicker.date
+                                                repeatOrNot:self.switchControl.on
+                                                      Sound:UILocalNotificationDefaultSoundName
+                                                        key:nil forValue:nil];
 }
 
 /*
