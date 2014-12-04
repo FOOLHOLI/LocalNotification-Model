@@ -68,6 +68,9 @@
         {
             UILocalNotification *localNotification = allOfTheLocalNotification[i];
             
+            /*NSDictionary *userInfo = localNotification.userInfo;
+            NSString *key = [userInfo objectForKey:@"key"];*/
+            
             if (i == indexPath.row) {
                 UIApplication *application = [UIApplication sharedApplication];
                 [application cancelLocalNotification:localNotification];
